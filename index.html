@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TuneSpace - Music Discovery</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-music-note-beamed"></i>
+                TuneSpace
+            </a>
+
+            <!-- Bootstrap Navbar Toggler -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#discover">Discover</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#songs">Songs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#artists">Artists</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+<!-- ================= HERO SECTION ================= -->
+<section id="home" class="hero-section">
+
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Left Content -->
+            <div class="col-lg-6">
+
+                <span class="badge rounded-pill hero-badge">
+                    Your Personal Music Space
+                </span>
+
+                <h1>
+                    Music that
+                    <span>matches your mood.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Discover new songs, explore talented artists and find
+                    music that fits every moment of your day.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#songs" class="btn btn-primary-custom">
+                        Explore Music
+                    </a>
+
+                    <a href="#artists" class="btn btn-outline-light">
+                        Discover Artists
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Music Player Card -->
+            <div class="col-lg-6">
+
+                <div class="music-player">
+
+                    <div class="album-image">
+                        <i class="bi bi-music-note"></i>
+                    </div>
+
+                    <div class="player-info">
+                        <p class="small-text">NOW PLAYING</p>
+
+                        <h3>Midnight Dreams</h3>
+
+                        <p>Aria Lane</p>
+
+                        <!-- Bootstrap Progress Bar -->
+                        <div class="progress">
+                            <div class="progress-bar"
+                                 role="progressbar"
+                                 style="width: 65%">
+                            </div>
+                        </div>
+
+                        <div class="time">
+                            <span>2:14</span>
+                            <span>3:42</span>
+                        </div>
+
+                        <div class="player-controls">
+
+                            <button>
+                                <i class="bi bi-skip-start-fill"></i>
+                            </button>
+
+                            <button class="play-button">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+
+                            <button>
+                                <i class="bi bi-skip-end-fill"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= DISCOVER SECTION ================= -->
+<section id="discover" class="section-padding">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>EXPLORE</span>
+            <h2>What are you feeling today?</h2>
+            <p>Choose a mood and discover music that fits it.</p>
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Bootstrap Grid + Card -->
+            <div class="col-6 col-md-3">
+
+                <div class="mood-card mood-one">
+                    <i class="bi bi-emoji-smile"></i>
+                    <h4>Happy</h4>
+                    <p>Feel-good tracks</p>
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <div class="mood-card mood-two">
+                    <i class="bi bi-cloud-moon"></i>
+                    <h4>Chill</h4>
+                    <p>Relaxing vibes</p>
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <div class="mood-card mood-three">
+                    <i class="bi bi-lightning-charge"></i>
+                    <h4>Energy</h4>
+                    <p>Powerful beats</p>
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <div class="mood-card mood-four">
+                    <i class="bi bi-bullseye"></i>
+                    <h4>Focus</h4>
+                    <p>Study & work music</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TRENDING SONGS ================= -->
+<section id="songs" class="section-padding dark-section">
+
+    <div class="container">
+
+        <div class="section-heading light-heading">
+            <span>TRENDING NOW</span>
+            <h2>Popular this week</h2>
+            <p>Listen to songs people are discovering right now.</p>
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Song Card 1 -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="song-card">
+
+                    <div class="song-cover cover-one">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </div>
+
+                    <div class="song-details">
+
+                        <span class="badge genre-badge">POP</span>
+
+                        <h4>Midnight Dreams</h4>
+
+                        <p>Aria Lane</p>
+
+                        <div class="song-bottom">
+                            <span>
+                                <i class="bi bi-clock"></i> 3:42
+                            </span>
+
+                            <button class="play-small">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Song Card 2 -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="song-card">
+
+                    <div class="song-cover cover-two">
+                        <i class="bi bi-vinyl-fill"></i>
+                    </div>
+
+                    <div class="song-details">
+
+                        <span class="badge genre-badge">INDIE</span>
+
+                        <h4>Golden Hour</h4>
+
+                        <p>Leo Rivers</p>
+
+                        <div class="song-bottom">
+                            <span>
+                                <i class="bi bi-clock"></i> 4:05
+                            </span>
+
+                            <button class="play-small">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Song Card 3 -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="song-card">
+
+                    <div class="song-cover cover-three">
+                        <i class="bi bi-headphones"></i>
+                    </div>
+
+                    <div class="song-details">
+
+                        <span class="badge genre-badge">R&B</span>
+
+                        <h4>Ocean Eyes</h4>
+
+                        <p>Maya Rose</p>
+
+                        <div class="song-bottom">
+                            <span>
+                                <i class="bi bi-clock"></i> 3:56
+                            </span>
+
+                            <button class="play-small">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ARTISTS SECTION ================= -->
+<section id="artists" class="section-padding">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>ARTISTS</span>
+            <h2>Meet the artists</h2>
+            <p>Discover fresh voices and creative musicians.</p>
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-6 col-md-3">
+
+                <div class="artist-card">
+
+                    <div class="artist-avatar avatar-one">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+
+                    <h4>Aria Lane</h4>
+                    <p>Pop Artist</p>
+
+                    <button class="btn btn-sm artist-btn">
+                        View Artist
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <div class="artist-card">
+
+                    <div class="artist-avatar avatar-two">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+
+                    <h4>Leo Rivers</h4>
+                    <p>Indie Artist</p>
+
+                    <button class="btn btn-sm artist-btn">
+                        View Artist
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <div class="artist-card">
+
+                    <div class="artist-avatar avatar-three">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+
+                    <h4>Maya Rose</h4>
+                    <p>R&B Artist</p>
+
+                    <button class="btn btn-sm artist-btn">
+                        View Artist
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <div class="artist-card">
+
+                    <div class="artist-avatar avatar-four">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+
+                    <h4>Nova Beats</h4>
+                    <p>Electronic</p>
+
+                    <button class="btn btn-sm artist-btn">
+                        View Artist
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES SECTION ================= -->
+<section id="services" class="section-padding services-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>SERVICES</span>
+            <h2>Everything music lovers need</h2>
+            <p>Simple tools to make discovering music more enjoyable.</p>
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-search"></i>
+                    </div>
+
+                    <h3>Discover Music</h3>
+
+                    <p>
+                        Explore songs based on your mood, genre and
+                        listening preferences.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-person-music"></i>
+                    </div>
+
+                    <h3>Find Artists</h3>
+
+                    <p>
+                        Discover emerging artists and explore their
+                        latest music.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-music-note-list"></i>
+                    </div>
+
+                    <h3>Create Playlists</h3>
+
+                    <p>
+                        Organize your favorite songs into playlists
+                        for every occasion.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact" class="contact-section">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="contact-box text-center">
+
+                    <span class="badge rounded-pill hero-badge">
+                        STAY CONNECTED
+                    </span>
+
+                    <h2>Get music updates in your inbox</h2>
+
+                    <p>
+                        Subscribe to receive new music discoveries,
+                        artist updates and playlists.
+                    </p>
+
+
+                    <!-- Bootstrap Form -->
+                    <form class="row g-2 justify-content-center">
+
+                        <div class="col-md-8">
+
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="Enter your email"
+                                   required>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <button type="submit"
+                                    class="btn btn-primary-custom w-100">
+                                Subscribe
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+
+                <h3>
+                    <i class="bi bi-music-note-beamed"></i>
+                    TuneSpace
+                </h3>
+
+                <p>
+                    A simple music discovery space designed for
+                    people who love finding new sounds.
+                </p>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <h5>Explore</h5>
+
+                <a href="#home">Home</a>
+                <a href="#discover">Discover</a>
+                <a href="#songs">Songs</a>
+                <a href="#artists">Artists</a>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <h5>Follow Us</h5>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+        <div class="text-center copyright">
+            © 2026 TuneSpace. All Rights Reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

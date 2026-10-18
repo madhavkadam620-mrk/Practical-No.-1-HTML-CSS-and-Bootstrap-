@@ -1,0 +1,602 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f7ff;
+    color: #17152a;
+}
+
+section {
+    scroll-margin-top: 75px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: rgba(12, 10, 30, 0.95);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    color: #b56cff;
+}
+
+.nav-link {
+    color: #ddd !important;
+    margin-left: 18px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #c477ff !important;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-section {
+    min-height: 100vh;
+    padding: 140px 0 80px;
+    background:
+        radial-gradient(circle at 80% 30%, #5e2ca5 0%, transparent 30%),
+        linear-gradient(135deg, #100c25, #24104a, #110d27);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.hero-badge {
+    background: rgba(181, 108, 255, 0.18);
+    color: #d9b5ff;
+    padding: 9px 16px;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 span {
+    display: block;
+    background: linear-gradient(90deg, #c477ff, #ff70b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+    color: #c9c5d8;
+    max-width: 550px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn-primary-custom {
+    background: linear-gradient(90deg, #8d45ff, #db55a8);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* ================= MUSIC PLAYER ================= */
+
+.music-player {
+    max-width: 430px;
+    margin: auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+}
+
+.album-image {
+    height: 220px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #8d45ff, #ff579e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    margin-bottom: 25px;
+}
+
+.small-text {
+    font-size: 0.7rem;
+    color: #a9a4ba;
+    letter-spacing: 2px;
+}
+
+.player-info h3 {
+    margin-bottom: 4px;
+}
+
+.player-info p {
+    color: #aaa5b9;
+}
+
+.progress {
+    height: 5px;
+    background: #403953;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #9c4dff, #ff6db6);
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #aaa5b9;
+    margin-top: 8px;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.player-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.play-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #9b4dff, #e451a7) !important;
+}
+
+
+/* ================= COMMON SECTION ================= */
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading span {
+    color: #974eff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.section-heading p {
+    color: #777;
+}
+
+
+/* ================= MOOD CARDS ================= */
+
+.mood-card {
+    padding: 30px 20px;
+    border-radius: 20px;
+    min-height: 180px;
+    color: white;
+    transition: 0.3s;
+}
+
+.mood-card:hover {
+    transform: translateY(-8px);
+}
+
+.mood-card i {
+    font-size: 2rem;
+}
+
+.mood-card h4 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.mood-card p {
+    opacity: 0.8;
+}
+
+.mood-one {
+    background: linear-gradient(135deg, #ff7a59, #ffb347);
+}
+
+.mood-two {
+    background: linear-gradient(135deg, #5b5fdb, #8b7de8);
+}
+
+.mood-three {
+    background: linear-gradient(135deg, #ff4d8d, #ff795c);
+}
+
+.mood-four {
+    background: linear-gradient(135deg, #12a878, #35c79a);
+}
+
+
+/* ================= SONG SECTION ================= */
+
+.dark-section {
+    background: #100d22;
+    color: white;
+}
+
+.light-heading p {
+    color: #aaa5b9;
+}
+
+.song-card {
+    background: #1c1833;
+    border: 1px solid #302a4d;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.song-card:hover {
+    transform: translateY(-8px);
+    border-color: #8d45ff;
+}
+
+.song-cover {
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.cover-one {
+    background: linear-gradient(135deg, #8d45ff, #f25ca5);
+}
+
+.cover-two {
+    background: linear-gradient(135deg, #e68a35, #f4c95d);
+}
+
+.cover-three {
+    background: linear-gradient(135deg, #188c9e, #5e4ad6);
+}
+
+.song-details {
+    padding: 20px;
+}
+
+.genre-badge {
+    background: #302450;
+    color: #cdaaff;
+}
+
+.song-details h4 {
+    margin-top: 12px;
+    margin-bottom: 3px;
+}
+
+.song-details p {
+    color: #aaa5b9;
+}
+
+.song-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #aaa5b9;
+    font-size: 0.85rem;
+}
+
+.play-small {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #8d45ff;
+    color: white;
+}
+
+
+/* ================= ARTISTS ================= */
+
+.artist-card {
+    text-align: center;
+    padding: 30px 15px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(30, 20, 60, 0.08);
+    transition: 0.3s;
+}
+
+.artist-card:hover {
+    transform: translateY(-8px);
+}
+
+.artist-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.avatar-one {
+    background: linear-gradient(135deg, #8d45ff, #e653a6);
+}
+
+.avatar-two {
+    background: linear-gradient(135deg, #ef9b35, #e86d4b);
+}
+
+.avatar-three {
+    background: linear-gradient(135deg, #2c9f9a, #4b64d8);
+}
+
+.avatar-four {
+    background: linear-gradient(135deg, #e34d82, #a84dde);
+}
+
+.artist-card h4 {
+    font-size: 1.1rem;
+}
+
+.artist-card p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.artist-btn {
+    border: 1px solid #8d45ff;
+    color: #8d45ff;
+    border-radius: 20px;
+}
+
+.artist-btn:hover {
+    background: #8d45ff;
+    color: white;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services-section {
+    background: #f0edfa;
+}
+
+.service-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(50, 30, 100, 0.1);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background: #eee3ff;
+    color: #8d45ff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.3rem;
+}
+
+.service-card p {
+    color: #777;
+    line-height: 1.7;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    padding: 90px 0;
+    background: #15112b;
+    color: white;
+}
+
+.contact-box {
+    padding: 50px 30px;
+}
+
+.contact-box h2 {
+    font-size: 2.4rem;
+    margin: 15px 0;
+}
+
+.contact-box p {
+    color: #aaa5b9;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    padding: 12px 18px;
+    border-radius: 25px;
+    border: none;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #0b0918;
+    color: white;
+    padding: 55px 0 25px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer h3 i {
+    color: #b56cff;
+}
+
+footer p {
+    color: #9993a8;
+    max-width: 450px;
+    line-height: 1.7;
+}
+
+footer h5 {
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #9993a8;
+    display: block;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #c477ff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #211b38;
+    color: white;
+}
+
+footer hr {
+    border-color: #29243c;
+    margin: 35px 0 20px;
+}
+
+.copyright {
+    color: #777083;
+    font-size: 0.85rem;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablet */
+@media (max-width: 991px) {
+
+    .hero-section {
+        padding-top: 120px;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .music-player {
+        margin-top: 50px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0 !important;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 576px) {
+
+    .hero-section {
+        padding: 110px 0 60px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-text {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons .btn {
+        margin-bottom: 10px;
+    }
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .album-image {
+        height: 180px;
+    }
+
+    .contact-box h2 {
+        font-size: 1.8rem;
+    }
+
+}
